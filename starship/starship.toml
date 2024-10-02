@@ -1,0 +1,63 @@
+
+format = """
+$username\
+$hostname\
+$line_break\
+$directory\
+$git_branch\
+$python\
+$character
+"""
+
+palette = "kanagawa"
+
+[palettes.kanagawa]
+orange = "#FF0024"
+green = "#559888"
+purple = "#9E72B7"
+yellow = "#ECC581"
+blue = "#7A93D8"
+light_blue = "#98A6C9"
+dark_blue = "#24334B"
+dark = "#25232C"
+
+[directory]
+style = "blue"
+home_symbol = "~"
+truncation_length = 3
+truncation_symbol = '../'
+format = 	'[$path]($style)[$read_only]($read_only_style) '
+
+[character]
+success_symbol = '[❯](bold green)'
+error_symbol = '[❯](bold red)'
+
+[username]
+format = ' [\[$user@](dark_blue)'
+show_always = true
+
+[hostname]
+style="dark_blue"
+format = '[$hostname\] ]($style)'
+ssh_only = false
+
+[python]
+style = "yellow"
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+symbol = ""
+
+[git_branch]
+style = "green"
+format = '[$symbol$branch(:$remote_branch)]($style) '
+
+[git_status]
+style = "yellow"
+
+[memory_usage]
+format = 'via $symbol [${ram}( | ${swap})]($style) '
+disabled = false
+
+[battery]
+full_symbol = '🔋 '
+charging_symbol = '⚡️ '
+discharging_symbol = '💀 '
