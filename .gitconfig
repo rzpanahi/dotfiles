@@ -1,0 +1,12 @@
+[user]
+	email = rezapanahiads2@gmail.com
+	name = Reza Panahi
+[credential]
+	helper = store
+[core]
+  editor = nvim
+[merge]
+	tool = vimdiff
+[alias]
+	oneline = log --oneline
+

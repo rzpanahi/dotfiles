@@ -9,12 +9,14 @@ mkdir -p "$DOTFILES_DIR"/bash
 mkdir -p "$DOTFILES_DIR"/tmux
 mkdir -p "$DOTFILES_DIR"/vim
 mkdir -p "$DOTFILES_DIR"/git
+mkdir -p "$DOTFILES_DIR"/zsh
 
 # Copy dotfiles
 cp ~/.bashrc "$DOTFILES_DIR"/bash
 cp ~/.bash_profile "$DOTFILES_DIR"/bash
 cp ~/.vimrc "$DOTFILES_DIR"/vim
 cp ~/.gitconfig "$DOTFILES_DIR"/git
+cp ~/.zshrc "$DOTFILES_DIR"/zsh
 cp -r ~/.config/nvim/ "$DOTFILES_DIR"
 cp -r ~/.config/starship/ "$DOTFILES_DIR"
 
